@@ -42,6 +42,17 @@
             text-align: center;
         }
 
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            max-width: 180px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
         .container {
             max-width: 1000px;
             margin: 20px auto;
@@ -87,6 +98,32 @@
             margin-left: 20px;
         }
 
+        /* Galería de imágenes */
+        .galeria {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .galeria h2 {
+            margin-bottom: 15px;
+        }
+
+        .galeria-fila {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .galeria-fila img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 5px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
         footer {
             background: #222;
             color: #fff;
@@ -100,6 +137,10 @@
 <body>
 
 <header>
+    <div class="logo">
+        <!-- Asegúrate de que el nombre del archivo coincide exactamente -->
+        <img src="logo-jhs.jpg" alt="JHS SERVICES SAS">
+    </div>
     <h1>Líquidos Penetrantes</h1>
     <p>Inspección profesional de soldaduras y piezas en acero – JHS SERVICES SAS</p>
 </header>
@@ -112,6 +153,21 @@
             de discontinuidades superficiales en soldaduras y componentes metálicos.
         </p>
         <a class="cta" href="tel:+573168726521">Llamar ahora: +57 316 872 6521</a>
+    </div>
+
+    <!-- GALERÍA DE IMÁGENES -->
+    <div class="galeria">
+        <h2>Ejemplos de inspección por líquidos penetrantes</h2>
+
+        <div class="galeria-fila">
+            <!-- Ajusta estos nombres si en tu repo son ligeramente distintos -->
+            <img src="inspeccion-soldaduras-estructuras.jpg" alt="Inspección de soldaduras en estructuras">
+            <img src="lp-porosidad-componente-mecanico.jpg" alt="Porosidad en componente mecánico detectada por líquidos penetrantes">
+        </div>
+
+        <div class="galeria-fila">
+            <img src="ciguenal1.jpg" alt="Inspección de cigüeñal con líquidos penetrantes">
+        </div>
     </div>
 
     <div class="seccion">
