@@ -132,13 +132,34 @@
             margin-top: 30px;
             font-size: 14px;
         }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .whatsapp-float:hover {
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <!-- Asegúrate de que el nombre del archivo coincide exactamente -->
         <img src="logo-jhs.jpg" alt="JHS SERVICES SAS">
     </div>
     <h1>Líquidos Penetrantes</h1>
@@ -160,8 +181,7 @@
         <h2>Ejemplos de inspección por líquidos penetrantes</h2>
 
         <div class="galeria-fila">
-            <!-- Ajusta estos nombres si en tu repo son ligeramente distintos -->
-            <img src="inspeccion-soldaduras-estructuras.jpg" alt="Inspección de soldaduras en estructuras">
+            <img src="inspeccion-soldaduras-estructurales-lp.jpg" alt="Inspección de soldaduras en estructuras">
             <img src="lp-porosidad-componente-mecanico.jpg" alt="Porosidad en componente mecánico detectada por líquidos penetrantes">
         </div>
 
@@ -222,6 +242,15 @@
     </div>
 
 </div>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/573168726521"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Escríbenos por WhatsApp">
+    💬
+</a>
 
 <footer>
     &copy; <span id="year"></span> JHS SERVICES SAS – Ensayos por líquidos penetrantes en Colombia.
