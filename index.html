@@ -85,6 +85,8 @@
         ul, ol {
             line-height: 1.6;
         }
+
+        /* Estilos para la galería con descripciones */
         .galeria {
             text-align: center;
             margin: 30px 0;
@@ -96,6 +98,17 @@
             border-radius: 6px;
             box-shadow: 0 0 5px rgba(0,0,0,0.2);
         }
+
+        .foto {
+            margin-bottom: 25px;
+        }
+        .descripcion-foto {
+            font-size: 14px;
+            color: #444;
+            font-style: italic;
+            margin-top: 6px;
+        }
+
         footer {
             text-align: center;
             font-size: 12px;
@@ -148,7 +161,6 @@
 
     <!-- Logo JHS SERVICES SAS -->
     <div class="logo">
-        <!-- Asegúrate de que el archivo se llame exactamente logo-jhs.jpg -->
         <img src="logo-jhs.jpg" alt="JHS SERVICES SAS - Ensayos No Destructivos con Líquidos Penetrantes">
     </div>
 
@@ -205,11 +217,8 @@
         <h2>Nuestro personal certificado</h2>
         <p>
             Contamos con <strong>personal certificado Nivel II en ensayos no destructivos (Líquidos Penetrantes)</strong>,
-            con experiencia en la inspeción de soldaduras, componentes industriales y equipos sometidos a condiciones
+            con experiencia en la inspección de soldaduras, componentes industriales y equipos sometidos a condiciones
             críticas de operación.
-        </p>
-        <p>
-            La certificación Nivel II garantiza la competencia técnica para:
         </p>
         <ul>
             <li>Planificar y ejecutar ensayos de líquidos penetrantes.</li>
@@ -218,21 +227,24 @@
         </ul>
     </section>
 
-    <!-- Galería con varias aplicaciones reales -->
+    <!-- Galería con fotos y comentarios -->
     <section class="galeria">
         <h2>Ejemplos de inspecciones con líquidos penetrantes</h2>
 
-        <!-- Imagen 1: cigüeñal -->
-        <img src="ciguenal1.jpg" 
-             alt="Inspección de cigüeñal con líquidos penetrantes para detectar discontinuidades superficiales">
+        <div class="foto">
+            <img src="ciguenal1.jpg" alt="Inspección de cigüeñal con líquidos penetrantes">
+            <p class="descripcion-foto">Inspección de cigüeñal para detectar grietas en zonas críticas mediante el método LP.</p>
+        </div>
 
-        <!-- Imagen 2: componente mecánico con indicación de porosidad -->
-        <img src="lp-porosidad-componente-mecanico.jpg" 
-             alt="Ensayo de líquidos penetrantes en componente mecánico con indicación de porosidad señalada">
+        <div class="foto">
+            <img src="lp-porosidad-componente-mecanico.jpg" alt="Indicaciones de porosidad en componente mecánico">
+            <p class="descripcion-foto">Indicación de porosidad encontrada en un componente mecánico usando líquidos penetrantes.</p>
+        </div>
 
-        <!-- Imagen 3: soldaduras estructurales inspeccionadas -->
-        <img src="inspeccion-soldaduras-estructurales-lp.jpg" 
-             alt="Inspección por líquidos penetrantes en soldaduras estructurales de acero">
+        <div class="foto">
+            <img src="inspeccion-soldaduras-estructurales-lp.jpg" alt="Inspección de soldaduras estructurales con LP">
+            <p class="descripcion-foto">Inspección de soldaduras estructurales revelando posibles defectos lineales superficiales.</p>
+        </div>
     </section>
 
     <section>
@@ -255,14 +267,14 @@
         </p>
 
         <p><strong>Teléfono / WhatsApp:</strong> 
-            <a href="https://wa.me/573168726521" target="_blank" rel="noopener">316 872 6521</a>
+            <a href="https://wa.me/573168726521" target="_blank">316 872 6521</a>
         </p>
 
         <p><strong>Correo electrónico:</strong> 
             <a href="mailto:jhs.com.co@gmail.com">jhs.com.co@gmail.com</a>
         </p>
 
-        <a class="cta" href="https://wa.me/573168726521" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <a class="cta" href="https://wa.me/573168726521" target="_blank">Escribir por WhatsApp</a>
 
         <form>
             <label>Nombre y empresa:</label>
