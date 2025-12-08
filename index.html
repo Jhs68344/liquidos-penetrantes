@@ -42,6 +42,26 @@
             text-align: center;
         }
 
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            max-width: 220px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .titulo-rojo {
+            color: red;
+            margin: 10px 0 5px 0;
+        }
+
+        .subtitulo {
+            margin: 0;
+        }
+
         .container {
             max-width: 1000px;
             margin: 20px auto;
@@ -59,6 +79,10 @@
             margin-bottom: 20px;
         }
 
+        .hero p {
+            font-size: 16px;
+        }
+
         .cta {
             display: inline-block;
             margin-top: 15px;
@@ -74,6 +98,27 @@
 
         .seccion { margin-bottom: 25px; }
         .lista { margin-left: 20px; }
+
+        /* Galería */
+        .galeria {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .galeria-fila {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .galeria-fila img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 5px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
 
         /* Botón WhatsApp flotante */
         .whatsapp-float {
@@ -93,6 +138,8 @@
             z-index: 999;
         }
 
+        .whatsapp-float:hover { opacity: 0.9; }
+
         footer {
             background: #222;
             color: #fff;
@@ -106,8 +153,12 @@
 <body>
 
 <header>
-    <h1>Líquidos Penetrantes</h1>
-    <p>Inspección profesional de soldaduras y piezas en acero – JHS SERVICES SAS</p>
+    <div class="logo">
+        <!-- Asegúrate que el archivo se llame exactamente logo-jhs.jpg -->
+        <img src="logo-jhs.jpg" alt="JHS SERVICES SAS">
+    </div>
+    <h1 class="titulo-rojo">Líquidos Penetrantes</h1>
+    <p class="subtitulo">Inspección profesional de soldaduras y piezas en acero – JHS SERVICES SAS</p>
 </header>
 
 <div class="container">
@@ -119,11 +170,27 @@
         <a class="cta" href="tel:+573168726521">Llamar ahora: +57 316 872 6521</a>
     </div>
 
+    <!-- GALERÍA DE IMÁGENES -->
+    <div class="galeria">
+        <h2>Ejemplos de inspección por líquidos penetrantes</h2>
+
+        <div class="galeria-fila">
+            <!-- Nombres EXACTOS de los archivos en tu repo -->
+            <img src="inspeccion-soldaduras-estructurales-lp.jpg" alt="Inspección de soldaduras en estructuras">
+            <img src="lp-porosidad-componente-mecanico.jpg" alt="Porosidad en componente mecánico detectada por líquidos penetrantes">
+        </div>
+
+        <div class="galeria-fila">
+            <img src="ciguenal1.jpg" alt="Inspección de cigüeñal con líquidos penetrantes">
+        </div>
+    </div>
+
     <div class="seccion">
         <h2>¿Qué es el ensayo por líquidos penetrantes?</h2>
         <p>
             Es una técnica de inspección no destructiva que permite revelar discontinuidades
-            abiertas a la superficie, tales como grietas, poros, fisuras o faltas de fusión.
+            abiertas a la superficie, tales como grietas, poros, fisuras o faltas de fusión,
+            aplicando un líquido penetrante de alta sensibilidad y un revelador especial.
         </p>
     </div>
 
@@ -150,16 +217,15 @@
     <div class="seccion">
         <h2>Proceso de inspección</h2>
         <ol class="lista">
-            <li>Limpieza previa.</li>
+            <li>Limpieza previa de la superficie.</li>
             <li>Aplicación del líquido penetrante.</li>
-            <li>Tiempo de penetración.</li>
-            <li>Remoción del exceso.</li>
+            <li>Tiempo de penetración controlado.</li>
+            <li>Remoción del exceso de penetrante.</li>
             <li>Aplicación del revelador.</li>
-            <li>Evaluación de indicaciones.</li>
+            <li>Evaluación e interpretación de indicaciones.</li>
         </ol>
     </div>
 
-    <!-- NUEVAS SECCIONES SEO -->
     <div class="seccion">
         <h2>¿Por qué elegir JHS SERVICES SAS?</h2>
         <ul class="lista">
@@ -172,8 +238,8 @@
     <div class="seccion">
         <h2>Servicio de líquidos penetrantes en Colombia</h2>
         <p>
-            Atendemos proyectos en Bogotá, Medellín, Cali, Barranquilla y todo Colombia.
-            Servicio para la industria metalmecánica, construcción, manufactura y mantenimiento.
+            Atendemos proyectos en Bogotá, Medellín, Cali, Barranquilla y todo Colombia,
+            para la industria metalmecánica, construcción, manufactura y mantenimiento.
         </p>
     </div>
 
@@ -189,7 +255,7 @@
 </div>
 
 <!-- BOTÓN DE WHATSAPP -->
-<a href="https://wa.me/573168726521" class="whatsapp-float">💬</a>
+<a href="https://wa.me/573168726521" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">💬</a>
 
 <footer>
     &copy; <span id="year"></span> JHS SERVICES SAS – Ensayos por líquidos penetrantes en Colombia.
