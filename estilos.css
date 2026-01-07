@@ -1,46 +1,61 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
 }
-header {
+
+.site-header {
   background: #005f6b;
-  padding: 10px 20px;
-  color: white;
+  padding: 15px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-.logo {
-  max-height: 100px;
-}
-nav a {
-  margin-left: 15px;
+  align-items: center;
   color: white;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
   text-decoration: none;
+  font-weight: bold;
 }
-.carousel {
-  display: flex;
-  overflow-x: auto;
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
+
 .carousel img {
-  height: 300px;
-  margin-right: 10px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
 }
-.whatsapp-float {
+
+.carousel p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
 }
-.whatsapp-float img {
-  width: 55px;
-  height: 55px;
-}
+
 footer {
-  text-align: center;
-  padding: 20px;
   background: #004b50;
   color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
