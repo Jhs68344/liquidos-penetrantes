@@ -155,5 +155,266 @@
     h1{
       margin: 0 0 12px 0;
       font-size: clamp(36px, 4.5vw, 60px);
-      font-weigh
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height:1.05;
+    }
+
+    .subtitle{
+      color:var(--muted);
+      margin: 0 0 18px;
+      font-size: 15px;
+    }
+
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:18px;
+    }
+
+    .badge{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* BOTONES */
+    .btn{
+      display:inline-flex;
+      padding: 13px 16px;
+      border-radius: 14px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      margin-right:10px;
+      margin-top:8px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+    }
+
+    .btn-primary{
+      border:none;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#0b1220;
+    }
+
+    /* BOTONES SECUNDARIOS MÁS VISIBLES */
+    .btn-secondary{
+      background: rgba(61,214,208,0.18);
+      border: 1px solid rgba(61,214,208,0.55);
+      color: #e9eefc;
+    }
+
+    .btn-secondary:hover{
+      background: rgba(61,214,208,0.28);
+    }
+
+    section{margin-top: 22px;}
+    .prose{padding: 18px;}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+
+    @media (max-width: 820px){
+      .grid{grid-template-columns:1fr;}
+    }
+
+    .img{
+      width:100%;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      display:block;
+    }
+
+    figcaption{
+      margin-top:8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    details{
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      padding: 12px 14px;
+      margin-bottom:10px;
+    }
+
+    summary{
+      cursor:pointer;
+      font-weight:700;
+    }
+
+    footer{
+      margin: 28px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <a class="brand" href="./">
+        <img src="./logo-jhs.jpg" alt="Logo JHS Services SAS">
+        <div>
+          <strong>JHS Services SAS</strong>
+          <span>Ensayos No Destructivos (END)</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">Servicios END</a>
+        <a href="#ejemplos">Ejemplos</a>
+        <a href="#guias">Guías</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="hero">
+
+      <div class="card hero-main">
+        <h1>Inspección por Líquidos Penetrantes (PT)</h1>
+
+        <p class="subtitle">
+          Ensayo no destructivo para detectar discontinuidades abiertas a la superficie en soldaduras y componentes metálicos:
+          grietas, porosidad abierta, falta de fusión superficial, socavado y cavidades superficiales.
+        </p>
+
+        <div class="badges">
+          <div class="badge">Detección superficial</div>
+          <div class="badge">Informe técnico con fotos</div>
+          <div class="badge">Bogotá + cobertura nacional</div>
+        </div>
+
+        <a class="btn btn-primary" href="https://wa.me/573168726521" target="_blank">
+          Cotizar por WhatsApp
+        </a>
+
+        <a class="btn" href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">
+          Ver todos los servicios END
+        </a>
+
+        <a class="btn btn-secondary" href="./procedimiento-liquidos-penetrantes.html">
+          📘 Procedimiento paso a paso (PT)
+        </a>
+
+        <a class="btn btn-secondary" href="./defectos-soldaduras-liquidos-penetrantes.html">
+          🔍 Defectos típicos en soldaduras
+        </a>
+      </div>
+
+      <!-- CONTACTO -->
+      <aside class="card prose">
+        <h2>Contacto directo</h2>
+        <p><strong>Bogotá – Colombia</strong></p>
+        <p>WhatsApp: +57 316 872 6521</p>
+        <p>Email: jhs.com.co@gmail.com</p>
+      </aside>
+
+    </main>
+
+    <!-- EJEMPLOS -->
+    <section id="ejemplos" class="card">
+      <div class="prose">
+        <h2>Ejemplos reales de inspección</h2>
+
+        <div class="grid">
+          <figure>
+            <img class="img" src="./grieta-eje-acero-4340.jpg" loading="lazy">
+            <figcaption>Indicación tipo grieta en eje AISI 4340.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img" src="./inspeccion-soldaduras-estructurales-lp.jpg" loading="lazy">
+            <figcaption>Inspección de soldaduras estructurales.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img" src="./lp-porosidad-componente-mecanico.jpg" loading="lazy">
+            <figcaption>Porosidad superficial revelada durante el ensayo.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIAS -->
+    <section id="guias" class="card">
+      <div class="prose">
+        <h2>📌 Guías técnicas complementarias</h2>
+        <p>Consulte nuestras páginas de apoyo:</p>
+
+        <a class="btn btn-secondary" href="./procedimiento-liquidos-penetrantes.html">
+          📘 Procedimiento completo PT
+        </a>
+
+        <a class="btn btn-secondary" href="./defectos-soldaduras-liquidos-penetrantes.html">
+          🔍 Defectos típicos en soldaduras
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="card">
+      <div class="prose">
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Qué defectos detecta PT?</summary>
+          <p>Grietas superficiales, porosidad abierta, falta de fusión superficial, socavado y cavidades abiertas.</p>
+        </details>
+
+        <details>
+          <summary>¿Incluye informe técnico?</summary>
+          <p>Sí, cada inspección incluye informe con registro fotográfico.</p>
+        </details>
+
+        <details>
+          <summary>¿Atienden solo Bogotá?</summary>
+          <p>No. Se presta servicio nacional según proyecto.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="card">
+      <div class="prose">
+        <h2>Contacto</h2>
+        <p><strong>JHS Services SAS</strong></p>
+        <p>Bogotá – Colombia</p>
+
+        <p>
+          WhatsApp:
+          <a href="https://wa.me/573168726521" target="_blank">
+            +57 316 872 6521
+          </a>
+        </p>
+
+        <p>Email: <a href="mailto:jhs.com.co@gmail.com">jhs.com.co@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 JHS Services SAS – Ensayos No Destructivos <br>
+      <a href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">
+        Sitio principal: Inspección Industrial END
+      </a>
+    </footer>
+
+  </div>
+</body>
+</html>
 
