@@ -1,31 +1,23 @@
-
-
-
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO Title -->
   <title>Inspección por Líquidos Penetrantes (PT) en Bogotá | JHS Services SAS</title>
 
-  <!-- Meta Description -->
   <meta name="description" content="Inspección por líquidos penetrantes (PT) para detectar grietas, fisuras y porosidad superficial. Informes técnicos con registro fotográfico. Atención en Bogotá y cobertura nacional." />
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://jhs68344.github.io/liquidos-penetrantes/" />
 
-  <!-- Open Graph (WhatsApp / redes) -->
   <meta property="og:title" content="Inspección por Líquidos Penetrantes (PT) | JHS Services SAS" />
-  <meta property="og:description" content="Detección de discontinuidades superficiales (grietas, porosidad, falta de fusión). Informe técnico y registro fotográfico. Bogotá y cobertura nacional." />
+  <meta property="og:description" content="Detección de discontinuidades superficiales en soldaduras y componentes metálicos. Informe técnico con registro fotográfico." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jhs68344.github.io/liquidos-penetrantes/" />
   <meta property="og:image" content="https://jhs68344.github.io/liquidos-penetrantes/grieta-eje-acero-4340.jpg" />
 
   <meta name="theme-color" content="#0b1220" />
 
-  <!-- ESTILOS MODERNOS -->
   <style>
     :root{
       --bg:#0b1220;
@@ -46,7 +38,6 @@
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color:var(--text);
 
-      /* Fondo superior más vivo */
       background:
         linear-gradient(180deg,
           rgba(61,214,208,0.35) 0%,
@@ -92,7 +83,6 @@
       text-decoration:none;
     }
 
-    /* LOGO */
     .brand img{
       width:60px;
       height:60px;
@@ -162,7 +152,6 @@
 
     .hero-main{padding: 30px;}
 
-    /* TITULO GRANDE */
     h1{
       margin: 0 0 12px 0;
       font-size: clamp(36px, 4.5vw, 60px);
@@ -202,9 +191,12 @@
       font-size:14px;
       margin-right:10px;
       margin-top:8px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
     }
 
     .btn-primary{
+      border:none;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       color:#0b1220;
     }
@@ -270,27 +262,24 @@
         </div>
       </a>
 
-      <!-- MENU CON LINK AL SITIO PRINCIPAL -->
       <nav>
-        <a href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">
-          Servicios END
-        </a>
-        <a href="#inicio">Inicio</a>
+        <a href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">Servicios END</a>
         <a href="#ejemplos">Ejemplos</a>
+        <a href="#guias">Guías</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
     <!-- HERO -->
-    <main id="inicio" class="hero">
+    <main class="hero">
 
       <div class="card hero-main">
         <h1>Inspección por Líquidos Penetrantes (PT)</h1>
 
         <p class="subtitle">
-          Ensayo no destructivo para detectar grietas, fisuras y discontinuidades abiertas a la superficie
-          en soldaduras y componentes metálicos.
+          Ensayo no destructivo para detectar discontinuidades abiertas a la superficie en soldaduras y componentes metálicos:
+          grietas, porosidad abierta, falta de fusión superficial, socavado y cavidades superficiales.
         </p>
 
         <div class="badges">
@@ -306,6 +295,14 @@
 
         <a class="btn" href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">
           Ver todos los servicios END
+        </a>
+
+        <a class="btn" href="./procedimiento-liquidos-penetrantes.html">
+          Procedimiento paso a paso (PT)
+        </a>
+
+        <a class="btn" href="./defectos-soldaduras-liquidos-penetrantes.html">
+          Defectos típicos en soldaduras
         </a>
       </div>
 
@@ -327,27 +324,32 @@
         <div class="grid">
 
           <figure>
-            <img class="img" src="./grieta-eje-acero-4340.jpg"
-                 alt="Grieta superficial detectada en eje de acero AISI 4340"
-                 loading="lazy">
+            <img class="img" src="./grieta-eje-acero-4340.jpg" loading="lazy">
             <figcaption>Indicación tipo grieta en eje AISI 4340.</figcaption>
           </figure>
 
           <figure>
-            <img class="img" src="./inspeccion-soldaduras-estructurales-lp.jpg"
-                 alt="Inspección de soldaduras estructurales con líquidos penetrantes"
-                 loading="lazy">
+            <img class="img" src="./inspeccion-soldaduras-estructurales-lp.jpg" loading="lazy">
             <figcaption>Inspección de soldaduras estructurales.</figcaption>
           </figure>
 
           <figure>
-            <img class="img" src="./lp-porosidad-componente-mecanico.jpg"
-                 alt="Porosidad superficial detectada con líquidos penetrantes"
-                 loading="lazy">
+            <img class="img" src="./lp-porosidad-componente-mecanico.jpg" loading="lazy">
             <figcaption>Porosidad superficial revelada durante el ensayo.</figcaption>
           </figure>
 
         </div>
+      </div>
+    </section>
+
+    <!-- GUIAS -->
+    <section id="guias" class="card">
+      <div class="prose">
+        <h2>Guías técnicas complementarias</h2>
+        <ul>
+          <li><a href="./procedimiento-liquidos-penetrantes.html">Procedimiento completo paso a paso (PT)</a></li>
+          <li><a href="./defectos-soldaduras-liquidos-penetrantes.html">Defectos típicos en soldaduras detectados con PT</a></li>
+        </ul>
       </div>
     </section>
 
@@ -358,7 +360,7 @@
 
         <details>
           <summary>¿Qué defectos detecta PT?</summary>
-          <p>Grietas, fisuras, poros abiertos y discontinuidades superficiales.</p>
+          <p>Grietas superficiales, porosidad abierta, falta de fusión superficial, socavado y cavidades abiertas.</p>
         </details>
 
         <details>
@@ -392,7 +394,6 @@
       </div>
     </section>
 
-    <!-- FOOTER CON LINK PRINCIPAL -->
     <footer>
       © 2026 JHS Services SAS – Ensayos No Destructivos <br>
       <a href="https://jhs68344.github.io/inspeccion-industrial/" target="_blank">
@@ -403,3 +404,4 @@
   </div>
 </body>
 </html>
+
