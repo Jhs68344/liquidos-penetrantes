@@ -1,142 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Inspección por Líquidos Penetrantes (PT) | JHS Services SAS</title>
-  <meta name="description" content="Inspección por líquidos penetrantes (PT) en Bogotá y a nivel nacional. Detección de grietas, porosidad y fisuras superficiales en soldaduras y componentes metálicos.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="index.html">
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO Title -->
+  <title>Inspección por Líquidos Penetrantes (PT) en Bogotá | JHS Services SAS</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Inspección por líquidos penetrantes (PT) para detectar grietas, fisuras y porosidad superficial. Informes técnicos con registro fotográfico. Atención en Bogotá y cobertura nacional." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://jhs68344.github.io/liquidos-penetrantes/" />
+
+  <!-- Open Graph (WhatsApp / redes) -->
+  <meta property="og:title" content="Inspección por Líquidos Penetrantes (PT) | JHS Services SAS" />
+  <meta property="og:description" content="Detección de discontinuidades superficiales (grietas, porosidad, falta de fusión). Informe técnico y registro fotográfico. Bogotá y cobertura nacional." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jhs68344.github.io/liquidos-penetrantes/" />
+  <meta property="og:image" content="https://jhs68344.github.io/liquidos-penetrantes/grieta-eje-acero-4340.jpg" />
+
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- ESTILOS INTERNOS MODERNOS -->
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#e9eefc;
+      --muted:#b9c3e6;
+      --line:rgba(255,255,255,.10);
+      --accent:#3dd6d0;
+      --accent2:#7c5cff;
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 15% 0%, rgba(124,92,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 85% 10%, rgba(61,214,208,.20), transparent 55%),
+        var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding: 22px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding: 14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; text-decoration:none;
+    }
+    .brand img{
+      width:44px; height:44px; border-radius:12px; object-fit:cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .brand strong{display:block; font-size:14px;}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    nav{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+    }
+    nav a{
+      text-decoration:none;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--muted);
+      background: rgba(255,255,255,.04);
+      font-size:13px;
+    }
+    nav a:hover{background: rgba(255,255,255,.08)}
+
+    .hero{
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr;}
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero-main{padding: 26px;}
+    h1{
+      margin: 0 0 10px 0;
+      font-size: clamp(26px, 3.2vw, 42px);
+      line-height:1.12;
+    }
+    .subtitle{color:var(--muted); margin: 0 0 18px;}
+    .badges{display:flex; flex-wrap:wrap; gap:10px;}
+    .badge{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .cta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top: 16px;}
+    .btn{
+      display:inline-flex;
+      padding: 12px 14px;
+      border-radius: 12px;
+      text-decoration:none;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .btn-primary{
+      border: none;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#0b1220;
+    }
+
+    section{margin-top: 22px;}
+    .prose{padding: 18px;}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+    @media (max-width: 820px){ .grid{grid-template-columns:1fr;} }
+
+    .img{
+      width:100%;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      display:block;
+    }
+    figcaption{
+      margin-top:8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    details{
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      padding: 12px 14px;
+      margin-bottom:10px;
+    }
+    summary{cursor:pointer; font-weight:700;}
+
+    footer{
+      margin: 26px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+    }
+  </style>
+
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"JHS Services SAS",
+    "areaServed":"CO",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Bogotá",
+      "addressCountry":"CO"
+    },
+    "telephone":"+57 316 872 6521",
+    "email":"jhs.com.co@gmail.com",
+    "url":"https://jhs68344.github.io/liquidos-penetrantes/",
+    "description":"Inspección por líquidos penetrantes (PT) para detección de discontinuidades superficiales con informe técnico y registro fotográfico."
+  }
+  </script>
 </head>
 
 <body>
+  <div class="container">
 
-<header class="site-header">
-  <div class="brand">
-    <img src="logo-jhs.jpg" alt="JHS Services SAS" class="logo">
-    <span>JHS Services SAS</span>
+    <!-- HEADER -->
+    <header class="topbar">
+      <a class="brand" href="./">
+        <img src="./logo.png" alt="Logo JHS Services SAS" loading="eager">
+        <div>
+          <strong>JHS Services SAS</strong>
+          <span>Ensayos No Destructivos (END)</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#ejemplos">Ejemplos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main id="inicio" class="hero">
+
+      <div class="card hero-main">
+        <h1>Inspección por Líquidos Penetrantes (PT)</h1>
+        <p class="subtitle">
+          Ensayo no destructivo para detectar grietas, fisuras y discontinuidades abiertas a la superficie
+          en soldaduras y componentes metálicos.
+        </p>
+
+        <div class="badges">
+          <div class="badge">Detección superficial</div>
+          <div class="badge">Informe técnico con fotos</div>
+          <div class="badge">Bogotá + cobertura nacional</div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/573168726521" target="_blank">
+            Cotizar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <aside class="card prose">
+        <h2>Contacto directo</h2>
+        <p><strong>Bogotá – Colombia</strong></p>
+        <p>WhatsApp: +57 316 872 6521</p>
+        <p>Email: jhs.com.co@gmail.com</p>
+      </aside>
+
+    </main>
+
+    <!-- EJEMPLOS -->
+    <section id="ejemplos" class="card">
+      <div class="prose">
+        <h2>Ejemplos reales de inspección</h2>
+
+        <div class="grid">
+
+          <figure>
+            <img class="img" src="./grieta-eje-acero-4340.jpg"
+                 alt="Grieta superficial detectada en eje de acero AISI 4340"
+                 loading="lazy">
+            <figcaption>Indicación tipo grieta en eje AISI 4340.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img" src="./inspeccion-soldaduras-estructurales-lp.jpg"
+                 alt="Inspección de soldaduras estructurales con líquidos penetrantes"
+                 loading="lazy">
+            <figcaption>Inspección de soldaduras estructurales.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img" src="./lp-porosidad-componente-mecanico.jpg"
+                 alt="Porosidad superficial detectada con líquidos penetrantes"
+                 loading="lazy">
+            <figcaption>Porosidad superficial revelada durante el ensayo.</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="card">
+      <div class="prose">
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Qué defectos detecta PT?</summary>
+          <p>Grietas, fisuras, poros abiertos y discontinuidades superficiales.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué materiales se pueden inspeccionar?</summary>
+          <p>Materiales metálicos no porosos como acero al carbono, inoxidable y aleaciones.</p>
+        </details>
+
+        <details>
+          <summary>¿Incluye informe técnico?</summary>
+          <p>Sí, cada inspección incluye informe con registro fotográfico y hallazgos.</p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="card">
+      <div class="prose">
+        <h2>Contacto</h2>
+        <p><strong>JHS Services SAS</strong></p>
+        <p>Bogotá – Colombia</p>
+
+        <p>
+          WhatsApp:
+          <a href="https://wa.me/573168726521" target="_blank">
+            +57 316 872 6521
+          </a>
+        </p>
+
+        <p>Email: <a href="mailto:jhs.com.co@gmail.com">jhs.com.co@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 JHS Services SAS – Ensayos No Destructivos
+    </footer>
+
   </div>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-    <a href="index-en.html">English</a>
-  </nav>
-</header>
-  <a href="https://jhs68344.github.io/inspeccion-industrial/" 
-   style="display:inline-block;margin:20px;color:#0b3c5d;font-weight:bold;">
-← Volver a inspección industrial
-</a>
-
-<div style="
-  background-color:#e6eef3;
-  padding:10px 20px;
-  font-family:Arial, Helvetica, sans-serif;
-">
-  <a href="https://jhs68344.github.io/inspeccion-soldaduras/"
-     style="
-       color:#0b3c5d;
-       font-weight:bold;
-       text-decoration:none;
-     ">
-    ← Volver a inspección de soldaduras
-  </a>
-</div>
-
-<main class="container">
-
-  <h1>Inspección por Líquidos Penetrantes (PT)</h1>
-
-  <!-- ARTÍCULO TÉCNICO -->
-  <p>
-    La <strong>inspección por líquidos penetrantes (PT)</strong> es un método de
-    <strong>ensayo no destructivo (END)</strong> ampliamente utilizado en la industria
-    para la detección de <strong>discontinuidades abiertas a la superficie</strong>,
-    tales como grietas, fisuras, porosidad superficial, pliegues, falta de fusión
-    superficial y otros defectos que pueden comprometer la integridad de un componente.
-  </p>
-
-  <p>
-    Esta técnica se fundamenta en el principio físico de la <strong>capilaridad</strong>,
-    mediante el cual un líquido penetrante de alta fluidez se introduce en las
-    discontinuidades superficiales del material. Posteriormente, se remueve el exceso
-    de penetrante y se aplica un revelador que permite que el líquido atrapado aflore
-    nuevamente a la superficie, formando <strong>indicaciones visibles</strong> que
-    pueden ser evaluadas por personal calificado.
-  </p>
-
-  <p>
-    El ensayo por líquidos penetrantes es aplicable a <strong>materiales no porosos</strong>
-    como aceros al carbono, aceros aleados, aceros inoxidables y diversas aleaciones
-    metálicas. Es especialmente efectivo en la inspección de <strong>soldaduras,
-    ejes, bridas, componentes mecánicos y piezas sometidas a esfuerzos cíclicos</strong>.
-    El procedimiento incluye etapas controladas de limpieza, aplicación del penetrante,
-    tiempo de penetración, revelado e inspección visual bajo condiciones adecuadas de
-    iluminación, finalizando con la elaboración de un <strong>informe técnico</strong>
-    que respalda la toma de decisiones de mantenimiento o reparación.
-  </p>
-
-  <!-- IMÁGENES CON COMENTARIOS -->
-  <h2>Ejemplos de inspección con líquidos penetrantes</h2>
-
-  <div class="carousel">
-
-    <img src="cigueñal1.jpg" alt="Inspección de componente mecánico con líquidos penetrantes">
-    <p>
-      Inspección de componente mecánico mediante líquidos penetrantes para la detección
-      de fisuras superficiales y discontinuidades abiertas que puedan comprometer su
-      funcionamiento seguro.
-    </p>
-
-    <img src="grieta-eje-acero-4340.jpg" alt="Grieta superficial en eje de acero AISI 4340">
-    <p>
-      Indicación tipo grieta detectada en eje de acero AISI 4340, evidencia de un defecto
-      superficial crítico que puede generar falla por fatiga si no es corregido.
-    </p>
-
-    <img src="inspeccion-soldaduras-estructurales-lp.jpg" alt="Inspección de soldaduras estructurales con líquidos penetrantes">
-    <p>
-      Inspección de soldaduras estructurales mediante líquidos penetrantes para identificar
-      grietas de solidificación, falta de fusión superficial y otros defectos abiertos a
-      la superficie.
-    </p>
-
-    <img src="lp-porosidad-componente-mecanico.jpg" alt="Porosidad superficial detectada con líquidos penetrantes">
-    <p>
-      Presencia de porosidad superficial en componente mecánico, revelada durante el
-      ensayo por líquidos penetrantes, la cual puede afectar la integridad del material.
-    </p>
-
-  </div>
-
-  <!-- SERVICIOS -->
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Inspección de soldaduras por líquidos penetrantes (PT)</li>
-      <li>Inspección de componentes mecánicos y piezas metálicas</li>
-      <li>Detección de grietas, fisuras y porosidad superficial</li>
-      <li>Informes técnicos con registro fotográfico</li>
-      <li>Atención a nivel nacional</li>
-    </ul>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Bogotá – Colombia</p>
-    <p>WhatsApp: <a href="https://wa.me/573168726521">316 872 6521</a></p>
-    <p>Email: jhs.com.co@gmail.com</p>
-  </section>
-
-</main>
-
-<!-- BOTÓN WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/573168726521">WhatsApp</a>
-
-<footer>
-  © 2026 JHS Services SAS – Ensayos No Destructivos
-</footer>
-
 </body>
 </html>
+
