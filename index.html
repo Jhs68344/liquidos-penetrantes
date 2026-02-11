@@ -22,118 +22,200 @@
 
   <meta name="theme-color" content="#0b1220" />
 
-  <!-- ESTILOS INTERNOS MODERNOS -->
+  <!-- ESTILOS MODERNOS -->
   <style>
     :root{
       --bg:#0b1220;
-      --card:#0f1a33;
       --text:#e9eefc;
       --muted:#b9c3e6;
-      --line:rgba(255,255,255,.10);
+      --line:rgba(255,255,255,.12);
       --accent:#3dd6d0;
       --accent2:#7c5cff;
       --shadow: 0 18px 60px rgba(0,0,0,.35);
-      --radius:18px;
+      --radius:20px;
       --max: 1100px;
     }
+
     *{box-sizing:border-box}
+
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color:var(--text);
+
+      /* Fondo superior más vivo */
       background:
-        radial-gradient(1200px 600px at 15% 0%, rgba(124,92,255,.25), transparent 60%),
-        radial-gradient(900px 500px at 85% 10%, rgba(61,214,208,.20), transparent 55%),
+        linear-gradient(180deg,
+          rgba(61,214,208,0.35) 0%,
+          rgba(124,92,255,0.25) 25%,
+          transparent 60%
+        ),
+        radial-gradient(1200px 600px at 15% 0%,
+          rgba(124,92,255,.35),
+          transparent 65%
+        ),
+        radial-gradient(900px 500px at 85% 10%,
+          rgba(61,214,208,.25),
+          transparent 60%
+        ),
         var(--bg);
+
       line-height:1.55;
     }
+
     a{color:inherit}
-    .container{max-width:var(--max); margin:0 auto; padding: 22px;}
+
+    .container{
+      max-width:var(--max);
+      margin:0 auto;
+      padding: 22px;
+    }
+
+    /* HEADER */
     .topbar{
-      display:flex; align-items:center; justify-content:space-between; gap:16px;
-      padding: 14px 0;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
     }
+
     .brand{
-      display:flex; align-items:center; gap:12px; text-decoration:none;
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
     }
+
+    /* LOGO ARREGLADO */
     .brand img{
-      width:44px; height:44px; border-radius:12px; object-fit:cover;
+      width:60px;
+      height:60px;
+      border-radius:14px;
+      object-fit:contain;
+      background: rgba(255,255,255,0.08);
+      padding:6px;
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
     }
-    .brand strong{display:block; font-size:14px;}
-    .brand span{display:block; font-size:12px; color:var(--muted)}
-    nav{
-      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+
+    .brand strong{
+      display:block;
+      font-size:15px;
+      font-weight:700;
     }
+
+    .brand span{
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
     nav a{
       text-decoration:none;
-      padding:10px 12px;
+      padding:10px 14px;
       border:1px solid var(--line);
       border-radius:999px;
       color:var(--muted);
-      background: rgba(255,255,255,.04);
+      background: rgba(255,255,255,.05);
       font-size:13px;
+      transition:.15s;
     }
-    nav a:hover{background: rgba(255,255,255,.08)}
 
+    nav a:hover{
+      background: rgba(255,255,255,.10);
+      transform: translateY(-1px);
+    }
+
+    /* HERO */
     .hero{
-      margin-top: 10px;
+      margin-top: 18px;
       display:grid;
-      grid-template-columns: 1.25fr .75fr;
+      grid-template-columns: 1.3fr .7fr;
       gap: 18px;
     }
+
     @media (max-width: 900px){
-      .hero{grid-template-columns: 1fr;}
+      .hero{grid-template-columns:1fr;}
     }
 
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      background: linear-gradient(180deg,
+        rgba(255,255,255,.07),
+        rgba(255,255,255,.03)
+      );
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       overflow:hidden;
     }
-    .hero-main{padding: 26px;}
+
+    .hero-main{padding: 30px;}
+
+    /* TITULO MÁS GRANDE */
     h1{
-      margin: 0 0 10px 0;
-      font-size: clamp(26px, 3.2vw, 42px);
-      line-height:1.12;
+      margin: 0 0 12px 0;
+      font-size: clamp(36px, 4.5vw, 60px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height:1.05;
     }
-    .subtitle{color:var(--muted); margin: 0 0 18px;}
-    .badges{display:flex; flex-wrap:wrap; gap:10px;}
+
+    .subtitle{
+      color:var(--muted);
+      margin: 0 0 18px;
+      font-size: 15px;
+    }
+
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:18px;
+    }
+
     .badge{
-      padding:8px 10px;
+      padding:8px 12px;
       border-radius:999px;
       border:1px solid var(--line);
       background: rgba(255,255,255,.04);
       color: var(--muted);
       font-size: 13px;
     }
-    .cta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top: 16px;}
+
     .btn{
       display:inline-flex;
-      padding: 12px 14px;
-      border-radius: 12px;
+      padding: 13px 16px;
+      border-radius: 14px;
       text-decoration:none;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.05);
-      font-weight: 600;
-      font-size: 14px;
+      font-weight:700;
+      font-size:14px;
     }
+
     .btn-primary{
-      border: none;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       color:#0b1220;
     }
 
     section{margin-top: 22px;}
     .prose{padding: 18px;}
+
     .grid{
       display:grid;
       grid-template-columns: repeat(2, minmax(0,1fr));
       gap: 14px;
     }
-    @media (max-width: 820px){ .grid{grid-template-columns:1fr;} }
+
+    @media (max-width: 820px){
+      .grid{grid-template-columns:1fr;}
+    }
 
     .img{
       width:100%;
@@ -141,6 +223,7 @@
       border: 1px solid var(--line);
       display:block;
     }
+
     figcaption{
       margin-top:8px;
       color: var(--muted);
@@ -154,34 +237,19 @@
       padding: 12px 14px;
       margin-bottom:10px;
     }
-    summary{cursor:pointer; font-weight:700;}
+
+    summary{
+      cursor:pointer;
+      font-weight:700;
+    }
 
     footer{
-      margin: 26px 0 10px;
+      margin: 28px 0 10px;
       color: var(--muted);
       font-size: 13px;
       text-align:center;
     }
   </style>
-
-  <!-- Schema LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"JHS Services SAS",
-    "areaServed":"CO",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Bogotá",
-      "addressCountry":"CO"
-    },
-    "telephone":"+57 316 872 6521",
-    "email":"jhs.com.co@gmail.com",
-    "url":"https://jhs68344.github.io/liquidos-penetrantes/",
-    "description":"Inspección por líquidos penetrantes (PT) para detección de discontinuidades superficiales con informe técnico y registro fotográfico."
-  }
-  </script>
 </head>
 
 <body>
@@ -190,7 +258,7 @@
     <!-- HEADER -->
     <header class="topbar">
       <a class="brand" href="./">
-        <img src="./logo.png" alt="Logo JHS Services SAS" loading="eager">
+        <img src="./logo-jhs.jpg" alt="Logo JHS Services SAS">
         <div>
           <strong>JHS Services SAS</strong>
           <span>Ensayos No Destructivos (END)</span>
@@ -210,6 +278,7 @@
 
       <div class="card hero-main">
         <h1>Inspección por Líquidos Penetrantes (PT)</h1>
+
         <p class="subtitle">
           Ensayo no destructivo para detectar grietas, fisuras y discontinuidades abiertas a la superficie
           en soldaduras y componentes metálicos.
@@ -221,13 +290,12 @@
           <div class="badge">Bogotá + cobertura nacional</div>
         </div>
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://wa.me/573168726521" target="_blank">
-            Cotizar por WhatsApp
-          </a>
-        </div>
+        <a class="btn btn-primary" href="https://wa.me/573168726521" target="_blank">
+          Cotizar por WhatsApp
+        </a>
       </div>
 
+      <!-- CONTACTO -->
       <aside class="card prose">
         <h2>Contacto directo</h2>
         <p><strong>Bogotá – Colombia</strong></p>
@@ -280,13 +348,13 @@
         </details>
 
         <details>
-          <summary>¿Qué materiales se pueden inspeccionar?</summary>
-          <p>Materiales metálicos no porosos como acero al carbono, inoxidable y aleaciones.</p>
+          <summary>¿Incluye informe técnico?</summary>
+          <p>Sí, cada inspección incluye informe con registro fotográfico.</p>
         </details>
 
         <details>
-          <summary>¿Incluye informe técnico?</summary>
-          <p>Sí, cada inspección incluye informe con registro fotográfico y hallazgos.</p>
+          <summary>¿Atienden solo Bogotá?</summary>
+          <p>No. Se presta servicio nacional según proyecto.</p>
         </details>
 
       </div>
@@ -317,4 +385,5 @@
   </div>
 </body>
 </html>
+
 
