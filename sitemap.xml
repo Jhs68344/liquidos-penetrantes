@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://jhs68344.github.io/liquidos-penetrantes/</loc>
+    <loc>https://www.liquidospenetrantes.lat/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://jhs68344.github.io/liquidos-penetrantes/inspeccion-soldaduras.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.liquidospenetrantes.lat/index-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.liquidospenetrantes.lat/inspeccion-soldaduras.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://jhs68344.github.io/liquidos-penetrantes/inspeccion-piezas-metalicas.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.liquidospenetrantes.lat/inspeccion-piezas-metalicas.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
