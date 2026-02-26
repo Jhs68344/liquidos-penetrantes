@@ -1,4 +1,4 @@
-><!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -21,6 +21,16 @@
         .inspeccion-galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 40px 0; }
         .inspeccion-galeria img { width: 100%; height: 350px; object-fit: cover; border-radius: 12px; border: 2px solid #1e2a44; transition: 0.3s; }
         .inspeccion-galeria img:hover { border-color: #3dd6d0; transform: scale(1.02); }
+        
+        /* Estilo para el aviso de Ultrasonido */
+        .servicio-relacionado { 
+            background: #1e2a44; 
+            padding: 20px; 
+            border-radius: 12px; 
+            margin-top: 30px; 
+            border-left: 5px solid #3dd6d0;
+        }
+
         footer { margin-top: 60px; padding: 40px 0; text-align: center; border-top: 1px solid #1e2a44; font-size: 14px; opacity: 0.7; }
         .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 100; }
     </style>
@@ -46,13 +56,19 @@
     <div class="inspeccion-galeria">
         <img src="inspeccion-soldaduras-estructurales-lp.jpg" alt="Ensayo en Soldadura">
         <img src="grieta-eje-acero-4340.jpg" alt="Grieta en Eje de Acero">
-        <img src="liquidos-penetrantes-inspeccion.jpg" alt="Inspección General">
+        <img src="liquidos-penetrantes-inspecion.jpg" alt="Inspección General">
     </div>
 
     <h2>Fundamentos Técnicos del Ensayo</h2>
     <p style="text-align: justify;">
-        La inspección por líquidos penetrantes es un método de ensayo no destructivo (END) diseñado para detectar discontinuidades macroscópicas y microscópicas abiertas a la superficie en materiales no porosos. El proceso se basa en el principio físico de la <strong>capilaridad</strong>, donde un líquido con baja tensión superficial penetra en las aperturas tras un tiempo de residencia determinado. Posteriormente, la aplicación de un revelador actúa como un agente absorbente, extrayendo el penetrante atrapado y generando una indicación visible (coloreada o fluorescente) que permite evaluar la integridad estructural bajo estándares internacionales.
+        La inspección por líquidos penetrantes es un método de ensayo no destructivo (END) diseñado para detectar discontinuidades macroscópicas y microscópicas abiertas a la superficie en materiales no porosos. El proceso se basa en el principio físico de la <strong>capilaridad</strong>, donde un líquido con baja tensión superficial penetra en las aperturas tras un tiempo de residencia determinado.
     </p>
+
+    <div class="servicio-relacionado">
+        <strong>¿Necesita inspección volumétrica?</strong><br>
+        También realizamos Ensayos por Ultrasonido para detectar fallas internas. 
+        <a href="https://www.ensayos-ut.lat" style="color: #3dd6d0; font-weight: bold;">Visite ensayos-ut.lat aquí.</a>
+    </div>
 
     <h2>Normas y Procedimientos</h2>
     <ul>
@@ -64,7 +80,9 @@
     <footer>
         © 2026 JHS Services SAS – Ingeniería en Ensayos No Destructivos<br>
         Bogotá - Colombia | WhatsApp: +57 316 872 6521<br>
-        Visite también: <a href="https://www.ensayos-ut.lat" style="color:#3dd6d0;">ensayos-ut.lat</a>
+        <strong>Nuestros Portales:</strong> 
+        <a href="https://www.ensayos-ut.lat" style="color:#3dd6d0;">www.ensayos-ut.lat</a> | 
+        <span style="color:#e67e22;">www.liquidospenetrantes.lat</span>
     </footer>
 </div>
 
