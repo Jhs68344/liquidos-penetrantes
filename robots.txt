@@ -1,1 +1,5 @@
+User-agent: *
+Allow: /
 
+# Indica la ubicación del mapa del sitio para facilitar el rastreo
+Sitemap: https://www.liquidospenetrantes.lat/sitemap.xml
