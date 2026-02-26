@@ -1,217 +1,143 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Inspección por Líquidos Penetrantes (PT) en Bogotá | JHS Services SAS</title>
+    <meta name="description" content="Servicio certificado de inspección por líquidos penetrantes en Bogotá. Detección de fisuras en soldaduras y piezas metálicas. Informes técnicos Nivel II.">
+    
+    <link rel="canonical" href="https://www.liquidospenetrantes.lat/">
 
-<title>Ensayo e Inspección por Líquidos Penetrantes (PT) en Bogotá | END Soldaduras y Acero</title>
-<meta name="description" content="Servicio profesional de ensayo e inspección por líquidos penetrantes (PT) en Bogotá y Colombia para detección de grietas en soldaduras y piezas en acero. Informe técnico con registro fotográfico.">
+    <style>
+        /* ADN VISUAL JHS - DARK INDUSTRIAL */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #0b1220; /* Azul muy oscuro */
+            color: #e9eefc;
+            line-height: 1.6;
+        }
 
-<link rel="canonical" href="https://www.liquidospenetrantes.lat/">
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
 
-<meta property="og:title" content="Ensayo por Líquidos Penetrantes (PT) en Bogotá | JHS Services SAS">
-<meta property="og:description" content="Inspección de soldaduras y piezas metálicas mediante ensayo no destructivo por líquidos penetrantes (PT).">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.liquidospenetrantes.lat/">
-<meta property="og:image" content="https://www.liquidospenetrantes.lat/grieta-eje-acero-4340.jpg">
+        /* Logo y Encabezado */
+        .header { text-align: center; margin-bottom: 40px; }
+        .logo-jhs { max-width: 280px; height: auto; margin-bottom: 20px; }
 
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Service",
- "name": "Ensayo por Líquidos Penetrantes (PT)",
- "provider": {
-   "@type": "LocalBusiness",
-   "name": "JHS Services SAS"
- },
- "areaServed": {
-   "@type": "City",
-   "name": "Bogotá"
- },
- "description": "Servicio de ensayo no destructivo (END) por líquidos penetrantes para inspección de soldaduras y estructuras metálicas en Bogotá y Colombia."
-}
-</script>
+        h1 { 
+            font-size: 36px; 
+            color: #3dd6d0; /* Cian Industrial */
+            border-left: 6px solid #e67e22; /* Naranja JHS */
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
 
-<style>
-/* Estilos Industriales JHS Modernos */
-body{
-margin:0;
-font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-background:#0b1220;
-color:#e9eefc;
-line-height:1.6;
-}
-.container{max-width:900px;margin:auto;padding:40px 20px;}
+        h2 { color: #3dd6d0; border-bottom: 1px solid #1e2a44; padding-bottom: 10px; margin-top: 40px; }
 
-/* Estilos para el Logo */
-.logo-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.logo-jhs {
-    max-width: 250px;
-    height: auto;
-    border: none;
-    border-radius: 0;
-}
+        /* BOTÓN WHATSAPP PRINCIPAL */
+        .btn-contacto {
+            display: inline-block;
+            padding: 18px 35px;
+            background: #3dd6d0;
+            color: #0b1220;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 18px;
+            box-shadow: 0 5px 20px rgba(61, 214, 208, 0.4);
+            transition: 0.3s;
+        }
+        .btn-contacto:hover { transform: translateY(-3px); background: #32b5b0; }
 
-h1{
-    font-size:36px; 
-    color: #3dd6d0; 
-    line-height: 1.2; 
-    margin-bottom:25px; 
-    border-left: 5px solid #e67e22; /* Naranja Industrial */
-    padding-left: 15px;
-}
-h2{margin-top:40px; color: #3dd6d0; border-bottom: 1px solid #1e2a44; padding-bottom: 10px;}
-p{font-size: 18px; opacity: 0.9;}
-strong { color: white; }
+        /* --- LA GALERÍA UNIFORME (LO QUE ME PEDISTE) --- */
+        .inspeccion-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
 
-/* Botón Moderno JHS */
-.btn{
-display:inline-block;
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-margin-top:20px;
-transition: all 0.3s ease;
-box-shadow: 0 4px 15px rgba(61, 214, 208, 0.3);
-font-size: 16px;
-}
-.btn-primary{
-background:#3dd6d0;
-color:#0b1220;
-border: 2px solid #3dd6d0;
-}
-.btn-primary:hover{
-background:#2bb3ad;
-border-color: #2bb3ad;
-transform: translateY(-2px);
-box-shadow: 0 6px 20px rgba(61, 214, 208, 0.5);
-}
+        .inspeccion-galeria img {
+            width: 100%;
+            height: 350px; /* Altura fija para todas las fotos */
+            object-fit: cover; /* Recorta la imagen para que no se estire */
+            border-radius: 12px;
+            border: 2px solid #1e2a44;
+            transition: 0.3s;
+        }
 
-.section{
-margin-top:30px;
-background: rgba(255,255,255,0.03);
-padding: 25px;
-border-radius: 12px;
-border: 1px solid #1e2a44;
-}
-ul { padding-left: 20px; }
-li { margin-bottom: 10px; font-size: 17px; }
+        .inspeccion-galeria img:hover {
+            border-color: #3dd6d0;
+            transform: scale(1.02);
+        }
 
-/* Imágenes Estilo JHS */
-img{
-max-width:100%;
-border-radius:10px;
-margin-top: 20px;
-border: 2px solid #1e2a44;
-display: block;
-}
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #1e2a44;
+            font-size: 14px;
+            opacity: 0.7;
+        }
 
-footer{
-margin-top:70px;
-padding: 40px 0;
-text-align:center;
-font-size:15px;
-border-top: 1px solid #1e2a44;
-opacity:0.7;
-color: white;
-}
-footer a { color: #3dd6d0; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-
-/* Botón flotante opcional JHS WhatsApp */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    z-index: 100;
-    transition: all 0.3s ease;
-    font-size: 15px;
-}
-.whatsapp-float:hover {
-    transform: scale(1.05);
-    background: #20b958;
-}
-
-/* Soporte para móviles */
-@media (max-width: 600px) {
-    h1 { font-size: 28px; }
-    .container { padding: 20px; }
-    .btn { width: 100%; text-align: center; box-sizing: border-box; }
-}
-</style>
+        /* Botón Flotante WhatsApp */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+    </style>
 </head>
-
 <body>
 
 <div class="container">
-
-    <div class="logo-container">
-        <img src="./logo-jhs.jpg" alt="JHS Services SAS - Logo Oficial" class="logo-jhs">
+    <div class="header">
+        <img src="logo-jhs.png" alt="JHS Services SAS Logo" class="logo-jhs">
+        <h1>Inspección por Líquidos Penetrantes (PT)</h1>
     </div>
 
-    <h1>Ensayo e Inspección por Líquidos Penetrantes (PT) para Soldaduras y Acero en Bogotá</h1>
-
-    <p>
-    Ofrecemos servicio profesional de <strong>ensayo no destructivo (END) por líquidos penetrantes (PT)</strong> 
-    para inspección técnica de soldaduras, estructuras metálicas y piezas en acero. 
-    Detectamos discontinuidades superficiales críticas como grietas, porosidad y falta de fusión. 
-    Atendemos en Bogotá y brindamos cobertura técnica a nivel nacional en Colombia.
+    <p style="font-size: 20px;">
+        Especialistas en <strong>Ensayos No Destructivos (END)</strong> en Bogotá. Detectamos discontinuidades superficiales en soldaduras, fundiciones y piezas forjadas con alta precisión.
     </p>
 
-    <a class="btn btn-primary" 
-       href="https://wa.me/573168726521?text=Hola%20JHS%2C%20vengo%20de%20LIQUIDOS-PENETRANTES.lat%20y%20necesito%20una%20inspección." 
-       target="_blank">
-       🚀 Cotizar Inspección por WhatsApp
+    <a href="https://wa.me/573168726521?text=Hola%20JHS%2C%20requiero%20una%20inspección%20por%20líquidos%20penetrantes." class="btn-contacto">
+        📲 Cotizar Inspección Ahora
     </a>
 
-    <div class="section">
-    <h2>Aplicaciones industriales del ensayo PT</h2>
+    <h2>Resultados de Ensayos Reales</h2>
+    
+    <div class="inspeccion-galeria">
+        <img src="inspeccion-soldaduras-estructurales-lp.jpg" alt="Ensayo en Soldadura">
+        <img src="grieta-eje-acero-4340.jpg" alt="Grieta en Eje de Acero">
+        <img src="liquidos-penetrantes-inspeccion.jpg" alt="Inspección General">
+    </div>
+
+    <h2>Normas y Procedimientos</h2>
     <ul>
-    <li><strong>Inspección de soldaduras:</strong> Estructurales, tanques y tuberías bajo norma.</li>
-    <li><strong>Control de calidad:</strong> Procesos de fabricación metalmecánica e industrial.</li>
-    <li><strong>Evaluación técnica:</strong> Piezas mecanizadas, ejes de acero y componentes críticos.</li>
-    <li><strong>Mantenimiento preventivo:</strong> Detección de fatiga en maquinaria.</li>
+        <li><strong>ASME Sección V:</strong> Artículo 6 (Líquidos Penetrantes).</li>
+        <li><strong>ASTM E165:</strong> Procedimiento estándar para examen PT.</li>
+        <li><strong>AWS D1.1:</strong> Criterios de aceptación en estructuras de acero.</li>
     </ul>
-    </div>
-
-    <div class="section">
-    <h2>Normas técnicas y certificación</h2>
-    <p>
-    Nuestros ensayos se ejecutan bajo estrictos lineamientos técnicos internacionales: 
-    <strong>ASTM E165</strong>, <strong>ASME Sección V</strong> e <strong>ISO 3452</strong>, 
-    garantizando informes técnicos válidos para cualquier auditoría o certificación de calidad.
-    </p>
-    </div>
-
-    <div class="section">
-    <h2>Resultados Técnicos e Informe Fotográfico</h2>
-    <p>Cada inspección técnica finaliza con un informe detallado que incluye registro fotográfico de los hallazgos:</p>
-    <img src="./grieta-eje-acero-4340.jpg" alt="Grieta detectada mediante líquidos penetrantes en eje de acero industrial">
-    <img src="./inspeccion-soldaduras-estructurales-lp.jpg" alt="Inspección técnica de soldaduras por líquidos penetrantes en Bogotá, Colombia">
-    </div>
 
     <footer>
-    © 2026 JHS Services SAS – Líderes en Ensayos e Inspección Técnica END<br>
-    Bogotá, Colombia | WhatsApp: <a href="https://wa.me/573168726521">+57 316 872 6521</a><br>
-    <a href="https://www.matematicasfinancieras.lat">Matemáticas Financieras</a> | 
-    <a href="https://www.inspeccion-ut.lat">Ultrasonido (UT)</a>
+        © 2026 JHS Services SAS – Ingeniería en Ensayos No Destructivos<br>
+        Bogotá - Colombia | WhatsApp: +57 316 872 6521<br>
+        Visite también: <a href="https://www.ensayos-ut.lat" style="color:#3dd6d0;">ensayos-ut.lat</a>
     </footer>
-
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/573168726521?text=Hola%2C%20necesito%20una%20inspección%20por%20Líquidos%20Penetrantes." target="_blank">
-    📲 Chat Directo
+<a href="https://wa.me/573168726521?text=Hola%20JHS%2C%20necesito%20información%20técnica." class="wa-float" target="_blank">
+    WhatsApp Directo
 </a>
 
 </body>
