@@ -22,14 +22,21 @@
         .inspeccion-galeria img { width: 100%; height: 350px; object-fit: cover; border-radius: 12px; border: 2px solid #1e2a44; transition: 0.3s; }
         .inspeccion-galeria img:hover { border-color: #3dd6d0; transform: scale(1.02); }
         
-        /* Estilo para el aviso de Ultrasonido */
+        /* Botón sencillo para Ultrasonido */
+        .btn-ut { display: inline-block; margin-top: 15px; padding: 12px 25px; background: transparent; color: #3dd6d0; border: 2px solid #3dd6d0; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; }
+        .btn-ut:hover { background: #3dd6d0; color: #0b1220; }
+
         .servicio-relacionado { 
             background: #1e2a44; 
-            padding: 20px; 
+            padding: 25px; 
             border-radius: 12px; 
             margin-top: 30px; 
             border-left: 5px solid #3dd6d0;
         }
+
+        .tabla-pros-cons { width: 100%; border-collapse: collapse; margin-top: 20px; background: #151d2e; border-radius: 8px; overflow: hidden; }
+        .tabla-pros-cons th, .tabla-pros-cons td { padding: 15px; text-align: left; border-bottom: 1px solid #1e2a44; }
+        .tabla-pros-cons th { background: #1e2a44; color: #3dd6d0; }
 
         footer { margin-top: 60px; padding: 40px 0; text-align: center; border-top: 1px solid #1e2a44; font-size: 14px; opacity: 0.7; }
         .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 100; }
@@ -64,10 +71,35 @@
         La inspección por líquidos penetrantes es un método de ensayo no destructivo (END) diseñado para detectar discontinuidades macroscópicas y microscópicas abiertas a la superficie en materiales no porosos. El proceso se basa en el principio físico de la <strong>capilaridad</strong>, donde un líquido con baja tensión superficial penetra en las aperturas tras un tiempo de residencia determinado.
     </p>
 
+    <h2>Ventajas y Desventajas del Método</h2>
+    <table class="tabla-pros-cons">
+        <thead>
+            <tr>
+                <th>Ventajas (Pros)</th>
+                <th>Desventajas (Contras)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alta sensibilidad para grietas superficiales muy finas.</td>
+                <td>Solo detecta fallas abiertas a la superficie (no internas).</td>
+            </tr>
+            <tr>
+                <td>Aplicable a gran variedad de materiales no porosos.</td>
+                <td>Requiere una limpieza previa extremadamente rigurosa.</td>
+            </tr>
+            <tr>
+                <td>Bajo costo comparado con otros métodos END.</td>
+                <td>No es aplicable en materiales porosos o rugosos.</td>
+            </tr>
+        </tbody>
+    </table>
+
     <div class="servicio-relacionado">
         <strong>¿Necesita inspección volumétrica?</strong><br>
-        También realizamos Ensayos por Ultrasonido para detectar fallas internas. 
-        <a href="https://www.ensayos-ut.lat" style="color: #3dd6d0; font-weight: bold;">Visite ensayos-ut.lat aquí.</a>
+        Si requiere detectar fallas internas o medir espesores, nuestro servicio de Ultrasonido es la solución ideal.
+        <br>
+        <a href="https://www.ensayos-ut.lat" class="btn-ut">Ver Inspección por Ultrasonido</a>
     </div>
 
     <h2>Normas y Procedimientos</h2>
